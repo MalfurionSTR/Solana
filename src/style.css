@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@100;400;700;900&display=swap');
+
+body {
+    background-color: black;
+}
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 17px;
+    color: white;
+}
+
+.early_access {
+    background: linear-gradient(to bottom left, #0047FF, #00BCD4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.early_access a {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2.2em;
+    background-color: rgba(0,0,0,0.6);
+    height: 3em;
+}
+
+.nav {
+    display: flex;
+    color: #848895;
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #848895;
+    margin-left: 30px;
+}
+
+.nav li a::after {
+    content: url(../assets/dd_menu.png);
+    height: 100%;
+    width: 20px;
+    margin-left: 5px;
+}
+
+.container_wrapper {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    /* background-color: #4b4949; */
+    position: relative;
+}
+
+.banner * {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    z-index: 1;
+}
+.banner h1 {
+    font-size: 70px;
+}
+
+.banner h1:first-child {
+    margin-top: 10%;
+}
+
+.banner p {
+    font-size: 21px;
+    width: 55%;
+    margin-top: 7vh;
+    text-align: center;
+}
+
+.banner .btns {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.banner .btns a {
+    font-size: 15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.btn_start{
+    background: linear-gradient(to bottom right, #8C01FA, #000000);
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    
+}
+
+.btn_docs {
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+}
+
+.banner_left_bg {
+    z-index: -2;
+    position: absolute;
+    left: -8%;
+    top: -5%;
+}
+.banner_right_bg {
+    z-index: -2;
+    position: absolute;
+    right: -8%;
+    top: -10%;
+}
+
+.after_banner {
+    color: #618ADC;
+    text-align: center;
+}
+
+.contacts_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    
+}
+
+.contact_icon {
+    margin-right: 20px;
+}
+.contact_icon:nth-child(1){
+    width: 113.36px;
+    height: 37.19px;
+}
+.contact_icon:nth-child(2){
+    width: 141px;
+    height: 37px;
+}
+.contact_icon:nth-child(3){
+    width: 115px;
+    height: 38px;
+}
+.contact_icon:nth-child(4){
+    width: 114px;
+    height: 38px;
+}
+.contact_icon:nth-child(5){
+    width: 114px;
+    height: 38px;
+}
+.contact_icon:nth-child(6){
+    width: 115px;
+    height: 38px;
+}
+.contact_icon:nth-child(7){
+    width: 157px;
+    height: 27px;
+}
+
+.join_us {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 10vh;
+}
+
+.heading h2{
+    font-size: 38px;
+    width: 70%;
+    font-weight: 400;
+    margin-top: 15%;
+}
+
+.info-text-colored:first-child {
+    font-size: 101px;;
+    background: linear-gradient(261.81deg, #19FB9B -8.01%, #8C01FA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info-text-colored:nth-child(3) {
+    font-size: 106px;
+    background: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info-text-colored:nth-child(5) {
+    font-size: 132px;
+    background: linear-gradient(265.11deg, #00FFBD -5.84%, #025B8C 111.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info-text-regular {
+    font-family: 'Roboto', sans-serif;
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 5vh;
+}
+
+.bg-info-image {
+    position: absolute;
+    z-index: -1;
+    top: 120vh;
+    width: 100vw;
+}
+
+.mass_adoption {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    height: 100vh;
+}
+
+.made-for {
+    width: 30%;
+}
+
+.made-for h2{
+    font-size: 40px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.made-for p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #C4C4C4;
+    height: 1.1em;
+    
+}
+
+.made-for p::before, .obj-number::before {
+    content: url(../assets/ico-before.png);
+    width: 10px;
+    height: 5px;
+    position: relative;
+    bottom: 0.35em;
+    margin-right: 5px;
+}
+
+ .objectives {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.obj-item {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 24px;
+    align-content: space-between;
+    height: fit-content;
+    padding: 5%;
+}
+
+.obj-item:first-child {
+    margin-top: 10vh;
+}
+
+.obj-name {
+    border-left: 3px solid #1FCFF1;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 15px;
+}
+.decent {
+    border-left: 3px solid #FFD512;
+}
+.scale {
+    border-left: 3px solid #9945FF;;
+}
+.energy {
+    border-left: 3px solid #19FB9B;
+}
+
+
+
+.obj-info {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #C4C4C4;
+}
+
+.obj-number {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.obj-scale {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #C4C4C4;
+    text-transform: uppercase;
+}
+
+span a{
+    color : #19FB9B;
+}
